@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>05 - Form</title>
-    <!-- <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="../css/05-form.css" /> -->
+    <link rel="stylesheet" href="../css/05-form.css" />
   </head>
   <body>
     <main>
@@ -29,11 +28,11 @@
           placeholder="Your Email.."
         />
         <br />
-        <label for="pass">Password</label>
+        <label for="password">Password</label>
         <input
           type="text"
           id="password"
-          name="userPassoword"
+          name="userPassword"
           placeholder="Your password.."
         />
         <br />
@@ -46,10 +45,11 @@
           <label for="contactChoice2">No, thank you</label>
         </fieldset>
         <label for="date"
-          >Date:
+          >Date:</label>
           <input
             type="date"
             name="uDate"
+            id="date"
             required
             pattern="\d{4}-\d{2}-\d{2}"
           />
