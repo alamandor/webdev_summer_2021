@@ -9,3 +9,36 @@
 .btn {
   width: 100%;
 }
+
+#profilePic {
+  margin: 5%;
+  width: 90%;
+}
+
+.card {
+  border: 2px solid navy;
+  text-align: center;
+  border-radius: 10px;
+}
+
+h1 {
+  color: navy;
+}
+
+#upVote {
+  color: white;
+  background-color: navy;
+  border: 1px solid navy;
+  font-size: large;
+  width: 90%;
+  margin: 5%;
+  height: 40px;
+}
+#upVote:hover {
+  color: black;
+  background-color: orange;
+}
+
+p {
+  margin: 5%;
+}

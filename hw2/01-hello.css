@@ -1,3 +1,19 @@
 .container {
   width: 50vw;
 }
+#profilePic {
+  border-radius: 50%;
+  width: 200px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+p::first-line {
+  text-align: center;
+  font-weight: bolder;
+}
