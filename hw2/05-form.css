@@ -2,6 +2,7 @@
 }
 
 .form-element {
+  text-align: left;
 }
 
 .btn {
@@ -11,4 +12,81 @@
 }
 
 .btn-secondary {
+}
+body {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+form {
+  display: inline-block;
+  background-color: white;
+  border-radius: 4px;
+  width: 75%;
+  max-width: 463px;
+  margin-top: 15px;
+  text-align: center;
+  border: 2px solid gray;
+}
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
+.formBox {
+  text-align: center;
+}
+label,
+legend {
+  font-weight: bolder;
+}
+
+label[for="contactChoice1"],
+label[for="contactChoice2"] {
+  font-weight: normal;
+}
+label[for="uname"],
+label[for="email"],
+label[for="password"],
+label[for="date"] {
+  display: inline-block;
+  width: 100px;
+}
+
+.buttonBox {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  height: 55px;
+  margin-bottom: 10px;
+}
+input[type="submit"] {
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 75%;
+  width: 45%;
+  color: white;
+  background-color: green;
+}
+
+input[type="reset"] {
+  display: inline-block;
+  height: 75%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 45%;
+  color: green;
+  background-color: white;
+}
+input[type="submit"],
+input[type="reset"] {
+  border: 1px solid green;
+  border-radius: 3px;
+  font-size: large;
+}
+
+input[type="text"],
+input[type="date"] {
+  width: 70%;
 }
