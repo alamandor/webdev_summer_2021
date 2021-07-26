@@ -4,8 +4,6 @@ h1 {
 
 /* Code for exercise 01-flex */
 .flex-container-1 {
-  /* height: 250px;
-  width: 70%; */
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
@@ -171,11 +169,11 @@ h1 {
 .grid-container.grid-container-2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 7px;
 }
 
-@media (min-width: 780px) {
+@media (min-width: 769px) {
   .grid-container-2 > .item1 {
     grid-column: 1 / span 6;
     grid-row: 1 / span 1;
