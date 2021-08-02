@@ -42,6 +42,7 @@ function handleSubmit(event) {
   console.group("======= Form Submission =======");
   console.log("Username: " + uname);
   console.log("Email: " + email);
+  console.log("Password: " + password);
   console.log("Newsletter: " + uSection);
   console.log("Date: " + date);
 }
