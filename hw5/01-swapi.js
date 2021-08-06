@@ -170,12 +170,13 @@ const filterStarships = (input) => {
 
 const reduceStarships = (input) => {
   // Return the cost to purchase all ships in the input array
-  const reducer = (acc, currentVal) =>
-    parseInt(acc.cost_in_credits) + parseInt(currentVal.cost_in_credits);
+  const output = input.reduce(function (acc, item) {
+    let cost =
+      item.cost_in_credits === "unknown" ? 0 : parseInt(item.cost_in_credits);
+    return acc + cost;
+  }, 0);
 
-  const output = input.reduce(reducer);
-
-  return output;
+  return `The cost of all starships is ${output.toLocaleString()} credits`;
 };
 
 console.log(mapStarships(starships));
