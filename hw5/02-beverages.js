@@ -2,6 +2,7 @@ const url =
   "https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic";
 
 let drinkBox = document.getElementById("drinkContainer");
+let loading = document.querySelector("#loading");
 
 function createNode(element) {
   return document.createElement(element);
@@ -53,4 +54,5 @@ fetchData(url).then((drinks) => {
   drinks.forEach((element) => {
     createDrinkBox(element);
   });
+  loading.parentElement.removeChild(loading);
 });
