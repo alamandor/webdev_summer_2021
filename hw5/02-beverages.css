@@ -12,3 +12,16 @@
   background-color: var(--purple);
   color: var(--white);
 }
+
+/* .charBox {
+  text-align: center;
+  max-width: min-content;
+  background-color: white;
+}
+.charBox:hover {
+  background-color: black;
+  color: white;
+}
+.charName {
+  font-size: larger;
+} */
