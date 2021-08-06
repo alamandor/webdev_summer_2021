@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>05 - Form</title>
+    <link rel="stylesheet" href="../css/05-form.css" />
+    <link rel="stylesheet" href="../hw2/05-form.css" />
+    <script defer src="05-form.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="formBox">
+      <form action="">
+        <h1>Registration<br/> Form</h1>
+        <!-- Add your code here -->
+        <div class="form-element">
+        <label for="uname">Username:</label>
+        <input
+          type="text"
+          id="uname"
+          name="username"
+        />
+        </div>
+        <br />
+        <div class="form-element">
+        <label for="email">Email:</label>
+        <input
+          type="text"
+          id="email"
+          name="userEmail"
+        />
+</div>
+        <br />
+        <div class="form-element">
+        <label for="password">Password:</label>
+        <input
+          type="text"
+          id="password"
+          name="userPassword"
+        />
+</div>
+        <br />
+<div class="form-element">
+        <fieldset>
+          <legend>Would you like to sign up for the newsletter?</legend>
+          <input type="radio" id="contactChoice1" name="contact" value="yes" />
+          <label for="contactChoice1">Yes, sign me up</label>
+          <br/>
+          <input type="radio" id="contactChoice2" name="contact" value="no" />
+          <label for="contactChoice2">No, thank you</label>
+        </fieldset>
+</div>
+<div class="form-element">
+        <label for="date"
+          >Date:</label>
+          <input
+            type="date"
+            name="uDate"
+            id="date"
+          />
+          <span class="validity"></span>
+        </label>
+</div>
+        <br />
+        <div class="buttonBox">
+        <input type="submit" value="Submit" />
+        <input type="reset" value="reset" />
+</div>
+      </form>
+</div>
+    </main>
+  </body>
+</html>
+
