@@ -14,12 +14,8 @@ function append(parent, el) {
 
 let createDrinkBox = (data) => {
   // Create div
-  // Append following to div:
-  // -- fullName
-  // -- title
-  // -- Image
   let div = createNode("div");
-  div.setAttribute("class", "charBox p-2 m-2 rounded");
+  div.setAttribute("class", "figure p-2 m-2 rounded");
   let name = createNode("p");
   let title = createNode("p");
   let img = createNode("img");
@@ -27,10 +23,6 @@ let createDrinkBox = (data) => {
   img.style.height = "200px";
   img.style.width = "200px";
   name.innerHTML = data.strDrink;
-  // name.setAttribute("class", "charName");
-  // title.setAttribute("class", "charTitle");
-
-  // title.innerHTML = data.title;
 
   append(div, img);
   append(div, name);
@@ -42,9 +34,16 @@ let app = document.querySelector("#results");
 
 async function fetchData(url) {
   // Fetches an array of objects, each object is a drink
-  const data = fetch(url)
+  const data = await fetch(url)
     .then((response) => response.json())
-    .then((drinkArray) => drinkArray.drinks);
+    .then((drinkArray) => drinkArray.drinks)
+    .catch((e) => {
+      console.log(e);
+      let errorElement = createNode("p");
+      errorElement.innerHTML = "An error occured. Please try again.";
+      drinkBox.appendChild(errorElement);
+      loading.parentElement.removeChild(loading);
+    });
 
   return data;
 }
