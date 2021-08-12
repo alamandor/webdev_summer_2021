@@ -17,7 +17,6 @@ let createDrinkBox = (data) => {
   let div = createNode("div");
   div.setAttribute("class", "figure p-2 m-2 rounded");
   let name = createNode("p");
-  let title = createNode("p");
   let img = createNode("img");
   img.src = data.strDrinkThumb;
   img.style.height = "200px";
@@ -26,7 +25,6 @@ let createDrinkBox = (data) => {
 
   append(div, img);
   append(div, name);
-  append(div, title);
   append(drinkBox, div);
 };
 
