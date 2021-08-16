@@ -10,6 +10,7 @@ $(document).ready(function () {
     let name = $("<p>").text(data.strDrink);
     let img = $("<img />", {
       src: data.strDrinkThumb,
+      alt: `An image of ${data.strDrink}`,
     });
     img.width(200);
     img.height(200);

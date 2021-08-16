@@ -21,6 +21,7 @@ let createDrinkBox = (data) => {
   img.src = data.strDrinkThumb;
   img.style.height = "200px";
   img.style.width = "200px";
+  img.alt = `An image of ${data.strDrink}`;
   name.innerHTML = data.strDrink;
 
   append(div, img);
